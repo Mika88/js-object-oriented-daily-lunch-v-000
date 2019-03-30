@@ -15,7 +15,7 @@ class Neighborhood {
 }
 
 class Customer {
-  constructor(name, neighborhood) {
+  constructor(name, neighborhood.id) {
     this.name = name;
     this.id = ++customerId;
     this.neighborhoodId = neighborhood.id;
