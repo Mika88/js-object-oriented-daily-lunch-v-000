@@ -19,6 +19,11 @@ class Neighborhood {
     });
   }
 
+  customers() {
+    return this.dliveries().map(delivery => {
+      return delivery.customerId;
+    });
+  }
 }
 
 class Customer {
