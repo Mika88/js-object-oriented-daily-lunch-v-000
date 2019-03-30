@@ -34,6 +34,12 @@ class Customer {
     this.neighborhoodId = neighborhoodId;
     store.customers.push(this);
   }
+
+  deliveries() {
+    store.deliveries.filter(delivery => {
+      return delivery.customerId === this.id;
+    });
+  }
 }
 
 class Meal {
