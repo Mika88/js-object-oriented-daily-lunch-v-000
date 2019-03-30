@@ -23,7 +23,7 @@ class Neighborhood {
     let customers = this.deliveries().map(delivery => {
       return delivery.customer();
     });
-     return [...new Set(customers)]; ;
+     return [...new Set(customers)]; 
   }
 }
 
@@ -39,6 +39,13 @@ class Customer {
     return store.deliveries.filter(delivery => {
       return delivery.customerId === this.id;
     });
+  }
+
+  meals() {
+    let meals = this.deliveries().map(delivery => {
+      return delivery.meal();
+    });
+    return [...new Set(meals)];
   }
 }
 
