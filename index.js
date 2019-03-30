@@ -36,7 +36,7 @@ class Customer {
   }
 
   deliveries() {
-    store.deliveries.filter(delivery => {
+    return store.deliveries.filter(delivery => {
       return delivery.customerId === this.id;
     });
   }
