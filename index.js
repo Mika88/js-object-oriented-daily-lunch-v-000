@@ -23,3 +23,17 @@ class Customer {
     store.customers.push(this);
   }
 }
+
+class Delivery {
+  constructor(meal, neighborhood, customer) {
+    if (meal) {
+      this.mealId = meal.id;
+    }
+    if (neighborhood) {
+      this.neighborhoodId = neighborhood.id;
+    }
+    if (customer) {
+      this.customerId = customer.id;
+    }
+  }
+}
