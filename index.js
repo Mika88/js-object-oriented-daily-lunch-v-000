@@ -55,6 +55,19 @@ class Meal {
     this.id = ++mealId;
     store.meals.push(this);
   }
+
+  deliveries() {
+    return store.deliveries.filter(delivery => {
+      return delivery.mealId === this.id;
+    });
+  }
+
+  customers() {
+    let customers = this.deliveries().map(delivery => {
+      return delivery.customer();
+    });
+     return [...new Set(customers)];
+  }
 }
 
 class Delivery {
