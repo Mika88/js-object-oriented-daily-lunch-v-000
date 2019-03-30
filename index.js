@@ -15,5 +15,11 @@ class Neighborhood {
 }
 
 class Customer {
-  constructor()
+  constructor(name, neighborhood) {
+    this.name = name;
+    if (neighborhood) {
+      this.neighborhoodId = neighborhood.id;
+    }
+    store.customers.push(this);
+  }
 }
