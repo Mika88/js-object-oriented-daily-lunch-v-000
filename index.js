@@ -24,6 +24,14 @@ class Customer {
   }
 }
 
+class Meal {
+  constructor(title, price) {
+    this.title = title;
+    this.price = price;
+    this.id = ++mealId;
+  }
+}
+
 class Delivery {
   constructor(meal, neighborhood, customer) {
     this.id = ++deliveryId;
