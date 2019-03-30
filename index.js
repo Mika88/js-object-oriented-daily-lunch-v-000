@@ -18,7 +18,7 @@ class Neighborhood {
       return delivery.neighborhoodId == this.id;
     });
   }
-  
+
 }
 
 class Customer {
