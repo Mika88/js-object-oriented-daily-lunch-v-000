@@ -39,6 +39,5 @@ class Delivery {
     this.neighborhoodId = neighborhoodId;
     this.customerId = customerId;
     store.delivery.push(this);
-    }
   }
 }
