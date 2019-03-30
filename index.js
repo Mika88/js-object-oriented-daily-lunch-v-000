@@ -68,6 +68,10 @@ class Meal {
     });
      return [...new Set(customers)];
   }
+
+  static byPrice() {
+    store.meals.sort(function(a, b){return b-a});
+  }
 }
 
 class Delivery {
