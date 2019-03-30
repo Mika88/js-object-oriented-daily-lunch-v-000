@@ -15,10 +15,10 @@ class Neighborhood {
 }
 
 class Customer {
-  constructor(name, neighborhood) {
+  constructor(name, neighborhoodId) {
     this.name = name;
     this.id = ++customerId;
-    if (neighborhood) {
+    if (neighborhoodId) {
       this.neighborhoodId = neighborhood.id;
     }
     store.customers.push(this);
