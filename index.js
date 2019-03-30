@@ -17,6 +17,7 @@ class Neighborhood {
 class Customer {
   constructor(name, neighborhood) {
     this.name = name;
+    this.id = ++customerId;
     if (neighborhood) {
       this.neighborhoodId = neighborhood.id;
     }
