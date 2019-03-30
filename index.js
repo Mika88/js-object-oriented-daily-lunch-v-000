@@ -23,7 +23,7 @@ class Neighborhood {
     let customers = this.deliveries().map(delivery => {
       return delivery.customer();
     });
-     return [...new Set(customers)]; 
+     return [...new Set(customers)];
   }
 }
 
